@@ -1,7 +1,10 @@
 [workspace]
 resolver = "2"
 
-members = [
-  "./packages/edon",
-  "./examples"
-]
+members = ["./packages/edon", "./examples"]
+
+[dependencies]
+napi = { git = "https://github.com/alshdavid-forks/napi-rs.git", branch = "alsh/libnode-v2", features = [
+  "napi8",
+  "libnode",
+] }
