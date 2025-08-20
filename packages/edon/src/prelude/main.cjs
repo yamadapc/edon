@@ -112,6 +112,7 @@ void (function () {
             stderr: true,
             stdout: true,
             stdin: false,
+            name: 'edon-worker',
           })
 
           worker.ref()
